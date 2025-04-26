@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Lightbox Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h1>Nature Gallery</h1>
+        <div class="gallery">
+            <div class="gallery-item" data-description="A serene lake surrounded by mountains at sunset.">
+                <img src="https://thaka.bing.com/th/id/OIP.5qFw_Z-4sDHbXudHp7yD_AHaFj?rs=1&pid=ImgDetMain" alt="Lake">
+                <p class="caption">Serene Lake</p>
+            </div>
+            <div class="gallery-item" data-description="Snow-capped mountains under a clear blue sky.">
+                <img src="https://thaka.bing.com/th/id/OIP.GOY_Vplp5sfKpVxlzHKBCQAAAA?rs=1&pid=ImgDetMain" alt="Mountains">
+                <p class="caption">Majestic Mountains</p>
+            </div>
+            <div class="gallery-item" data-description="A lush forest full of vibrant greenery and wildlife.">
+                <img src="https://thaka.bing.com/th/id/OIP.d7uk30Mw-oGjAyJqhwtg6wHaE7?rs=1&pid=ImgDetMain" alt="Forest">
+                <p class="caption">Lush Forest</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About This Gallery</h2>
+        <p>Explore beautiful real nature images with detailed explanations.</p>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption" id="lightbox-caption"></div>
+        <div class="description" id="lightbox-description"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
